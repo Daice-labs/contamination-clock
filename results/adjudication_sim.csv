@@ -1,0 +1,7 @@
+claim,stat,verdict
+"S-H1 channel potency (mem >= 1.5x par, exact, matched dose)",2.79,PASS
+S-H2 proximity monotone with adjacent at floor,True,PASS
+"S-H3 selection matches exact expected-max law (ratio in [0.8,1.2], k>=10)","ratios ok=True, exp=0.734",PASS
+S-H4 as-deployed detector asymmetry,True,PASS
+S-H5 laundering persistence (vs injected truth),74% vs 65%,PASS
+S-H6 discipline holds reported inflation near floor,-0.0124,PASS

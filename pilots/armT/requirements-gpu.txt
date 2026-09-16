@@ -1,0 +1,9 @@
+torch
+transformers
+peft
+accelerate
+safetensors
+evalplus
+numpy
+pandas
+tokenizers

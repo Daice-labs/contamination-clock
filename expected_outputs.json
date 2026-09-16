@@ -1,0 +1,9 @@
+{
+  "prereg_hash_prefix": "5651d901afb9914e",
+  "noise_floor": 0.0483,
+  "SH1_channel_ratio": 2.79,
+  "undisciplined_reported_inflation": 0.1656,
+  "laundering_persistence": 0.739,
+  "adjudication_rows": 6,
+  "detector_exact_arm": "C-P exact (in corpus)"
+}

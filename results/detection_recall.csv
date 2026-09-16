@@ -1,0 +1,5 @@
+arm,recall_leaked,false_flags
+C-P exact (in corpus),1.0,0
+C-G laundered (derivatives),0.0,0
+C-M memory (not in corpus),0.0,0
+C-S selection (no content),0.0,0

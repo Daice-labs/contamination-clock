@@ -1,0 +1,82 @@
+{
+ "study": "RP-T05 Contamination Clock, Arm S (simulation, constructed ground truth)",
+ "prereg_hash": "5651d901afb9914e33fd1e6b39682bd54b8a24f4adc8a48f19d0512a90db3eb8",
+ "gate_G0": {
+  "verdict": "PASS",
+  "recover_C-M_exact": {
+   "truth": 0.0656,
+   "est": 0.0737,
+   "ok": true
+  },
+  "recover_C-P_exact": {
+   "truth": 0.0422,
+   "est": 0.0449,
+   "ok": true
+  },
+  "recover_C-M_paraphrase": {
+   "truth": 0.0427,
+   "est": 0.0376,
+   "ok": true
+  },
+  "zero_leak_below_floor": true,
+  "legit_training_not_inflation": true,
+  "ledger_flags_smuggle": true,
+  "clean_slice_stays_sealed": true
+ },
+ "floor": 0.04831178122495805,
+ "SH1_ratio": 2.79,
+ "SH3_exponent": 0.734,
+ "laundering": {
+  "peak": 0.0819,
+  "after_scrub": 0.0605,
+  "persistence": 0.739,
+  "injected_truth": 0.65,
+  "provenance_coverage": 1.0
+ },
+ "discipline": {
+  "undisciplined_reported_inflation": 0.1656,
+  "disciplined_certified_inflation": -0.0124,
+  "floor": 0.0483,
+  "certifications": 10
+ },
+ "calculator_k_max": {
+  "delta=0.01": 1.0,
+  "delta=0.02": 1.0,
+  "delta=0.05": 1.3,
+  "delta=0.08": 1.9
+ },
+ "adjudication": [
+  {
+   "claim": "S-H1 channel potency (mem >= 1.5x par, exact, matched dose)",
+   "stat": 2.79,
+   "verdict": "PASS"
+  },
+  {
+   "claim": "S-H2 proximity monotone with adjacent at floor",
+   "stat": true,
+   "verdict": "PASS"
+  },
+  {
+   "claim": "S-H3 selection matches exact expected-max law (ratio in [0.8,1.2], k>=10)",
+   "stat": "ratios ok=True, exp=0.734",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "S-H4 as-deployed detector asymmetry",
+   "stat": true,
+   "verdict": "PASS"
+  },
+  {
+   "claim": "S-H5 laundering persistence (vs injected truth)",
+   "stat": "74% vs 65%",
+   "verdict": "PASS"
+  },
+  {
+   "claim": "S-H6 discipline holds reported inflation near floor",
+   "stat": -0.0124,
+   "verdict": "PASS"
+  }
+ ],
+ "ledger_events": 451,
+ "scope": "Validates estimator, ledger, law, detector asymmetry, discipline against injected truth. Arms M (API memory agent) and T (LoRA) carry real-model claims and run separately."
+}

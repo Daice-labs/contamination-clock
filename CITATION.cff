@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "The Contamination Clock: An Instrument and Reuse Budget for Runtime Evaluation Inflation"
+message: "Anonymized for double-blind review. Author metadata will be added at de-anonymization."
+authors:
+  - name: "Anonymous"
+type: software
+repository-artifact: "rpt05-repro archive"
